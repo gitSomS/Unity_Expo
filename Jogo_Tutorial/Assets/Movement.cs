@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("isGrounded: " + isGrounded);
         Debug.Log("IsWalking: " + isWalking);
 
-        // Pular
+        // Jump
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             m_Rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
